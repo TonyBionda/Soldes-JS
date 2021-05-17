@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldes.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <h1>Soldes.JS</h1>
+        <div class="links">
+            <a href="#">A propos</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="input">
+            <h1>User input</h1>
+            <label for="budget">Budget</label>
+            <input type="number" name="budget" id="budget" min=1 value=50>
+            <textarea id="userInput" placeholder="Texte à mettre ici">Caleçons:6:3
+Chaussettes:5:2
+T-Shirt:14:2
+Pantalons:31:3
+Chemises:23:2
+            </textarea>
+            <button name="button" onClick="eventTriggered()" type="button">
+                Cliquez pour générer le devis
+            </button>
+        </div>
+        <div class="console">
+            <h1>Console output</h1>
+            <p id="consoleOutput"></p>
+        </div>
+    </div>
+    <div class="footer">L3 MIAGE UEVE</div>
+    <script src="event.js"></script>
+    <script src="app/logs.js"></script>
+    <script src="app/model.js"></script>
+    <script src="app/functions.js"></script>
+</body>
+
+</html>

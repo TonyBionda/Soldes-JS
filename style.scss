@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+
+body {
+    margin: 0;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #3e3e3e;
+        width: 100%;
+        color: white;
+        h1 {
+            margin-left: 20px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+            :last-child {
+                margin-right: 10%;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: "Cookie", cursive;
+                font-size: 30px;
+            }
+        }
+    }
+    .content {
+        display: grid;
+        grid-template-areas:
+            "input console"
+            ". console";
+        grid-template-columns: 1fr 2fr;
+        margin: 30px 10% 0 10%;
+        .input {
+            grid-area: input;
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            background: #ddd;
+            padding: 0 20px 20px 20px;
+            border-radius: 10px;
+            textarea {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                padding: 0;
+                width: 100%;
+                height: 200px;
+                resize: none;
+            }
+            button {
+                border: none;
+                cursor: pointer;
+                background: white;
+            }
+        }
+        .console {
+            grid-area: console;
+            background: #ddd;
+            padding-left: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            min-height: 200px;
+        }
+    }
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: #3e3e3e;
+        text-align: center;
+        color: white;
+        font-family: "Cookie", cursive;
+    }
+}
+h1 {
+    font-family: "Cookie", cursive;
+    font-size: 30px;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+body {
+  margin: 0;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3e3e3e;
+  width: 100%;
+  color: white;
+}
+
+body nav h1 {
+  margin-left: 20px;
+}
+
+body nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+body nav .links :last-child {
+  margin-right: 10%;
+}
+
+body nav .links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+}
+
+body .content {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "input console" ". console";
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin: 30px 10% 0 10%;
+}
+
+body .content .input {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: input;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  background: #ddd;
+  padding: 0 20px 20px 20px;
+  border-radius: 10px;
+}
+
+body .content .input textarea {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+body .content .input button {
+  border: none;
+  cursor: pointer;
+  background: white;
+}
+
+body .content .console {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: console;
+  background: #ddd;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  min-height: 200px;
+}
+
+body .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #3e3e3e;
+  text-align: center;
+  color: white;
+  font-family: "Cookie", cursive;
+}
+
+h1 {
+  font-family: "Cookie", cursive;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
