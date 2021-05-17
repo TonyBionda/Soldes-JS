@@ -12,7 +12,7 @@ const getInput = () => {
 }
 
 const getData = ({ userInput, budget }) => {
-    let instructions = userInput.split('\n');
+    let instructions = userInput.split('\n').map(article => article.trim());
     //on vérifie que c'est de la bonne forme
     const regex = new RegExp(/^.+:\d+:\d+$/);
     instructions = instructions.filter(instr => regex.test(instr));
