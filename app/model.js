@@ -26,5 +26,7 @@ class Devis {
         this.articlesEnleves.set(article, quantite);
         if (gap - (prix * quantite) > 0)
             this.startFilter(gap - (prix * quantite))
+        else
+            this.prixTotal = this.articles.reduce((acc, { prix, quantite }) => acc + prix * quantite, 0);
     }
 }
